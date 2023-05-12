@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #2F2B43;" styleClass="background" stylesheets="@../../../../css/Dash.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestao.micro.negocios.controller.LoginController">
+   <children>
+      <Pane layoutX="4.0" layoutY="134.0" prefHeight="381.0" prefWidth="292.0" stylesheets="@../../../../css/Dash.css">
+         <children>
+            <GridPane layoutX="9.0" layoutY="14.0" prefHeight="85.0" prefWidth="277.0" stylesheets="@../../../../css/Dash.css">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="165.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="user" prefHeight="30.0" prefWidth="87.0" stylesheets="@../../../../css/Dash.css" GridPane.columnIndex="1" />
+                  <Label prefHeight="45.0" prefWidth="95.0" styleClass="text" stylesheets="@../../../../css/Dash.css" text="Login" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="password" prefHeight="32.0" prefWidth="198.0" stylesheets="@../../../../css/Dash.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label stylesheets="@../../../../css/Dash.css" text="Senha:" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <Button layoutX="8.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleEntrar" prefHeight="45.0" prefWidth="277.0" styleClass="button2" stylesheets="@../../../../css/Dash.css" text="Entrar" textFill="WHITE" />
+            <Label layoutX="52.0" layoutY="290.0" stylesheets="@../../../../css/Dash.css" text="Não tem uma conta?" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="8.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleLimpar" prefHeight="45.0" prefWidth="277.0" styleClass="button2" stylesheets="@../../../../css/Dash.css" text="Limpar" textFill="WHITE" />
+            <Button layoutX="55.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="45.0" prefWidth="185.0" styleClass="button4" stylesheets="@../../../../css/Dash.css" text="Cadastre-se" />
+         </children>
+      </Pane>
+      <Label layoutX="5.0" layoutY="18.0" prefHeight="50.0" prefWidth="292.0" style="-fx-alignment: center;" stylesheets="@../../../../css/Dash.css" text="GESTÃO DE" textFill="#f8f8f8">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="68.0" prefHeight="50.0" prefWidth="267.0" styleClass="..\..\..\..\css\Dash.css" stylesheets="@../../../../css/Dash.css" text="MICRO NEGÓCIO" textFill="WHITE">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="1087.0" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestao.micro.negocios.controller.RootController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Dashboard">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleDashboard" text="Abrir" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Produto">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleProduct" text="Abrir" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" onAction="#handleSair" text="Sair">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleSair" text="Logout" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
